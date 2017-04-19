@@ -115,6 +115,7 @@ public class TelaPrincipal extends AppCompatActivity {
 
 
 
+
     private File arquivoFoto = null;
     private File criarArquivo() throws IOException {
         String timeStamp = new
