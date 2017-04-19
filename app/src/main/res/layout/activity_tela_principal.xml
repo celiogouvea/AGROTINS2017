@@ -1,18 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.cgtechnology.agortins2017.TelaPrincipal">
 
+    <ImageView
+        android:id="@+id/ivImagem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/camera"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true" />
+
     <TextView
+        android:id="@+id/tvTirarFoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="12dp"
+        android:text="Tirar Foto"
+        tools:ignore="HardcodedText" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvEditarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTirarFoto"
+        android:layout_centerHorizontal="true"
+        android:text="Editar Foto"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvSelecionarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/tvEditarFoto"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:text="Selecionar Foto"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/btCapturar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvTirarFoto"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:onClick="tirarFoto"
+        app:srcCompat="@drawable/foto"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btSelecionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSelecionarFoto"
+        android:layout_alignStart="@+id/tvSelecionarFoto"
+        android:layout_below="@+id/tvSelecionarFoto"
+        android:onClick="selecionarImagem"
+        app:srcCompat="@drawable/galeria"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEditarFoto"
+        android:layout_centerHorizontal="true"
+        android:onClick="editarImagem"
+        app:srcCompat="@drawable/editar"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>
