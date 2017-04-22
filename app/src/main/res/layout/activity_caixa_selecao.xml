@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/selecao"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@+id/rd01">
+
+                <RadioButton
+                    android:id="@+id/rd01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cor 01"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rd02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cor 02"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rd03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cor 03"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rd04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cor 04"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rd05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cor 05"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rd06"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cor 06"
+                    tools:ignore="HardcodedText" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="salvar"
+            tools:ignore="ButtonStyle,HardcodedText,InefficientWeight" />
+    </LinearLayout>
+
+</LinearLayout>

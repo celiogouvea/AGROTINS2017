@@ -279,6 +279,7 @@ public class TelaPrincipal extends AppCompatActivity {
             Bitmap thumbnail = (BitmapFactory.decodeFile(picturePath));
             imagem.setImageBitmap(thumbnail);
             espacosBrancos();
+
         }
         if (requestCode == TIRA_FOTO && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
