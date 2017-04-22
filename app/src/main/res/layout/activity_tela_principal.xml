@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlayoutPrincipal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.cgtechnology.agortins2017.TelaPrincipal">
@@ -10,10 +11,10 @@
         android:id="@+id/ivImagem"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
         android:layout_marginTop="90dp"
         app:srcCompat="@drawable/camera"
-        tools:ignore="ContentDescription"
-        android:layout_alignParentTop="true" />
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/tvTirarFoto"
@@ -60,7 +61,7 @@
         android:layout_marginRight="14dp"
         android:onClick="tirarFoto"
         app:srcCompat="@drawable/foto"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,UnusedAttribute" />
 
     <ImageButton
         android:id="@+id/btSelecionar"
@@ -71,7 +72,7 @@
         android:layout_below="@+id/tvSelecionarFoto"
         android:onClick="selecionarImagem"
         app:srcCompat="@drawable/galeria"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,UnusedAttribute" />
 
     <ImageButton
         android:id="@+id/btEditar"
@@ -81,7 +82,15 @@
         android:layout_centerHorizontal="true"
         android:onClick="editarImagem"
         app:srcCompat="@drawable/editar"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,UnusedAttribute" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
